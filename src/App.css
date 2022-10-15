@@ -1,38 +1,63 @@
-.App {
-  text-align: center;
+.home-header {
+  background-image: url('/public/assets/images/painting.JPG');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+
+  height: 600px;
+  /* box-shadow: 0 0 10px rgb(163, 163, 163); */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navbrand {
+  font-family: 'Courgette', cursive;
+  font-size: 24px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.featured-img {
+  /* border-radius: 15px; */
+  box-shadow: 0 0 10px rgb(190, 190, 190);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.font {
+  font-family: 'Courgette', cursive;
 }
 
-.App-link {
-  color: #61dafb;
+.font-two {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 700;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.large-text {
+  font-size: 60px;
+}
+
+.large-text-two {
+  font-size: 50px;
+}
+
+
+.home-title {
+  font-size: 90px;
+  text-shadow: 0 0.05rem 0.3rem rgba(0, 0, 0, 0.757);
+}
+
+.home-header-text {
+  text-shadow: 0 0.05rem 0.3rem rgba(0, 0, 0, 0.757);
+}
+
+.home-about {
+  background-color: #2b2d42;
+}
+
+.available-img {
+  border-radius: 15px;
+}
+
+.img-painting {
+  box-shadow: 0 0 10px rgb(190, 190, 190);
+}
+
+.footer {
+  background-color: #edf2f4;
 }

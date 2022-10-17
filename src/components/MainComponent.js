@@ -42,6 +42,14 @@ class Main extends Component {
             );
         }
 
+        const PaintingWithId = ({match}) => {
+            return (
+                <PaintingDetail
+                    painting={this.state.paintings.filter((painting) => painting.id === parseInt(match.params.id, 10))[0]}
+                />
+            );
+        }
+
         return (
             <div>
                 <Header />
@@ -53,7 +61,12 @@ class Main extends Component {
                     <Route exact path='/gallery/landscape' component={ () => <Landscape paintings={this.state.paintings} />} />
                     <Route exact path='/gallery/seascape' component={ () => <Seascape paintings={this.state.paintings} />} />
                     <Route exact path='/gallery/floral' component={ () => <Floral paintings={this.state.paintings} />} />
-                    <Route exact path='/about' component={ () => <About />} />
+                    <Route exact path='/gallery/:id' component={ PaintingWithId } />
+                    <Route exact path='/about' component={ () => <About 
+                                        available1={this.state.paintings.filter((painting) => painting.isAvailable)[2]} 
+                                        available2={this.state.paintings.filter((painting) => painting.isAvailable)[4]} 
+                                        available3={this.state.paintings.filter((painting) => painting.isAvailable)[5]} 
+                    />} />
                     <Route exact path='/contact' component={ () => <Contact />} />
                 </Switch>
                 <Footer />

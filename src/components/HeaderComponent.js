@@ -23,32 +23,32 @@ class Header extends Component {
     render() {
         return (
             <>  {/* website navbar */}
-                <Navbar light color='white' expand='md'>
-                    <div className='container-fluid'>
-                        <NavbarBrand className='mr-auto' href='/'>
+                <Navbar light color='white' expand='md' className='navbar'>
+                    <div className='container-fluid text-center py-3'>
+                        <NavbarBrand href='/'>
                         <img src='/assets/images/logo2.png' height='50' width='51px'
                             alt='Shirleys Studio logo' 
                         />  <span className='navbrand pl-3'>Shirleys Art Studio</span>
                         </NavbarBrand>
                         <NavbarToggler onClick={this.toggleNav} />
                         <Collapse isOpen={this.state.isNavOpen} navbar>
-                            <Nav navbar className='justify-content-center ml-auto'>
+                            <Nav navbar className='ml-auto'>
                                 <NavItem>
-                                    <NavLink className='nav-link' to='/'>
+                                    <NavLink className='nav-link mx-4' to='/'>
                                         <span className='font-two'>Home</span>
                                     </NavLink>
                                 </NavItem>
                                 <UncontrolledDropdown nav>
-                                    <DropdownToggle nav className='font-two'>Gallery<span className='fa fa-chevron-down ml-2'></span></DropdownToggle>
-                                    <DropdownMenu className='drop-menu mt-2' top>
+                                    <DropdownToggle nav className='font-two mx-4 mt-1'>Gallery<span className='fa fa-chevron-down ml-2'></span></DropdownToggle>
+                                    <DropdownMenu className='drop-menu px-5' top>
                                         <DropdownItem className='drop-item'>
-                                            <NavLink to='/gallery' className='font-two py-2'>All works</NavLink>
+                                            <NavLink to='/gallery' className='font-two py-2'><span className='fa fa-chevron-right mr-2'></span>All works</NavLink>
                                         </DropdownItem>
                                         <DropdownItem className='drop-item'>
-                                            <NavLink to='/gallery/available' className='font-two'>Available</NavLink>
+                                            <NavLink to='/gallery/available' className='font-two'><span className='fa fa-chevron-right mr-2'></span>Available</NavLink>
                                         </DropdownItem>
                                         <DropdownItem className='drop-item'>
-                                            <NavLink to='/gallery/sold' className='font-two py-2'>Sold</NavLink>
+                                            <NavLink to='/gallery/sold' className='font-two py-2'><span className='fa fa-chevron-right mr-2'></span>Sold</NavLink>
                                         </DropdownItem>
                                     </DropdownMenu>
                                 </UncontrolledDropdown>
@@ -56,12 +56,12 @@ class Header extends Component {
                             {/* dropdown nav-link - about */}
                             <Nav navbar className='ml-auto'>
                                 <NavItem>
-                                    <NavLink className='nav-link' to='/about'>
+                                    <NavLink className='nav-link mx-4' to='/about'>
                                         <span className='font-two'>About</span>
                                     </NavLink>
                                 </NavItem>
                                 <NavItem>
-                                    <NavLink className='nav-link' to='/contact'>
+                                    <NavLink className='nav-link mx-4' to='/contact'>
                                        <span className='font-two'>Contact</span>
                                     </NavLink>
                                 </NavItem>

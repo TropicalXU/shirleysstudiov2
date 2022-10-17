@@ -1,6 +1,6 @@
 export const PAINTINGS = [
     {
-       
+        id: 0,
         isAvailable: false,
         type: 'landscape',
         title: "Snow On Ha'penny Bridge",
@@ -13,7 +13,7 @@ export const PAINTINGS = [
 
     },
     {  
-      
+        id: 1,
         isAvailable: false,
         type: 'landscape',
         title: "GPO Dublin",
@@ -26,7 +26,7 @@ export const PAINTINGS = [
 
     },
     {
-   
+        id: 2,
         isAvailable: true,
         type: 'landscape',
         title: "Fusilier's Arch, Stephen's Green",
@@ -40,7 +40,7 @@ export const PAINTINGS = [
 
     },
     {
-      
+        id: 3,
         isAvailable: false,
         type: 'landscape',
         title: "Bandstand, Stephen's Green",
@@ -53,7 +53,7 @@ export const PAINTINGS = [
 
     },
     {
-      
+        id: 4,
         isAvailable: true,
         type: 'landscape',
         title: "Japanese Gardens, Kildare",
@@ -67,7 +67,7 @@ export const PAINTINGS = [
 
     },
     {
-       
+        id: 5,
         isAvailable: true,
         type: 'landscape',
         title: "Where The Wild Wildflowers Grow",
@@ -81,7 +81,7 @@ export const PAINTINGS = [
 
     },
     {
-  
+        id: 6,
         isAvailable: true,
         type: 'landscape',
         title: "Harvest Moon",
@@ -95,7 +95,7 @@ export const PAINTINGS = [
 
     },
     {
-   
+        id: 7,
         isAvailable: true,
         type: 'landscape',
         title: "Harvest Time",
@@ -109,7 +109,7 @@ export const PAINTINGS = [
 
     },
     {
-       
+        id: 8,
         isAvailable: true,
         type: 'landscape',
         title: 'Moonlight Cottage 1',
@@ -123,7 +123,7 @@ export const PAINTINGS = [
 
     },
     {
-    
+        id: 9,
         isAvailable: true,
         type: 'landscape',
         title: 'Moonlight Cottage 2',
@@ -137,7 +137,7 @@ export const PAINTINGS = [
 
     },
     {
-       
+        id: 10,
         isAvailable: false,
         type: 'landscape',
         title: 'Snow on Brooklyn Bridge',
@@ -150,7 +150,7 @@ export const PAINTINGS = [
 
     },
     {
-  
+        id: 11,
         isAvailable: true,
         type: 'landscape',
         title: 'Where The River Flows',
@@ -164,7 +164,7 @@ export const PAINTINGS = [
 
     },
     {
-
+        id: 12,
         isAvailable: true,
         type: 'landscape',
         title: "Hidden Cottage",
@@ -178,7 +178,7 @@ export const PAINTINGS = [
 
     },
     {
- 
+        id: 13,
         isAvailable: true,
         type: 'landscape',
         title: "The West's Awake",
@@ -192,10 +192,10 @@ export const PAINTINGS = [
 
     },
     {
-   
+        id: 14,
         isAvailable: true,
         type: 'landscape',
-        title: "Irish Tatched Cottage",
+        title: "Irish Thatched Cottage",
         image: 'https://res.cloudinary.com/dhrs5mwhz/image/upload/v1657042268/Shirley%27s%20Studio/IMG_8201_ezt7ql.jpg',
         img: 'https://res.cloudinary.com/dhrs5mwhz/image/upload/v1657124055/Shirley%27s%20Studio/wallapp-cottagee.jpg',
         description: '40cm X 40cm Acrylic on thin edge canvas',
@@ -206,7 +206,7 @@ export const PAINTINGS = [
 
     },
     {
- 
+        id: 15,
         isAvailable: true,
         type: 'landscape',
         title: 'Into The Light',
@@ -220,7 +220,7 @@ export const PAINTINGS = [
 
     },
     {
-  
+        id: 16,
         isAvailable: true,
         type: 'landscape',
         title: 'Clifden, Co Glaway',
@@ -234,7 +234,7 @@ export const PAINTINGS = [
 
     },
     {
-  
+        id: 17,
         isAvailable: false,
         type: 'landscape',
         title: 'Swans On Rossmore Lake',
@@ -247,7 +247,7 @@ export const PAINTINGS = [
 
     },
     {
-      
+        id: 18,
         isAvailable: false,
         type: 'seascape',
         title: "Golden Gate Bridge",
@@ -260,7 +260,7 @@ export const PAINTINGS = [
 
     },
     {
-    
+        id: 19,
         isAvailable: true,
         type: 'seascape',
         title: "Summertime",
@@ -274,7 +274,7 @@ export const PAINTINGS = [
 
     },
     {
-      
+        id: 20,
         isAvailable: true,
         type: 'seascape',
         title: "Regatta Royale",
@@ -288,7 +288,7 @@ export const PAINTINGS = [
 
     },
     {
-    
+        id: 21,
         isAvailable: true,
         type: 'seascape',
         title: 'Martello Tower, Donabate',
@@ -302,7 +302,7 @@ export const PAINTINGS = [
 
     },
     {
-      
+        id: 22,
         isAvailable: true,
         type: 'seascape',
         title: 'Seaside Stroll',
@@ -316,7 +316,7 @@ export const PAINTINGS = [
 
     },
     {
-  
+        id: 23,
         isAvailable: false,
         type: 'seascape',
         title: 'Hook Head Lighthouse 1',
@@ -329,7 +329,7 @@ export const PAINTINGS = [
 
     },
     {
- 
+        id: 24,
         isAvailable: false,
         type: 'seascape',
         title: 'Hook Head Lighthouse 2',
@@ -342,7 +342,7 @@ export const PAINTINGS = [
 
     },
     {
-    
+        id: 25,
         isAvailable: true,
         type: 'seascape',
         title: 'Cliffs of Moher, Co. Clare',
@@ -356,7 +356,7 @@ export const PAINTINGS = [
 
     },
     {
-  
+        id: 26,
         isAvailable: true,
         type: 'seascape',
         title: 'Sailing Home',
@@ -370,7 +370,7 @@ export const PAINTINGS = [
 
     },
     {
-    
+        id: 27,
         isAvailable: true,
         type: 'seascape',
         title: 'Fishing Boats At Howth Harbour',
@@ -384,7 +384,7 @@ export const PAINTINGS = [
 
     },
     {
-  
+        id: 28,
         isAvailable: true,
         type: 'seascape',
         title: 'Sails And Rolling Waves 1',
@@ -398,7 +398,7 @@ export const PAINTINGS = [
 
     },
     {
- 
+        id: 29,
         isAvailable: true,
         type: 'seascape',
         title: 'Sails And Rolling Waves 2',
@@ -412,7 +412,7 @@ export const PAINTINGS = [
 
     },
     {
-     
+        id: 30,
         isAvailable: true,
         type: 'seascape',
         title: 'Killary Harbour, Connemara',
@@ -426,7 +426,7 @@ export const PAINTINGS = [
 
     },
     {
-     
+        id: 31,
         isAvailable: true,
         type: 'seascape',
         title: "Love's Young Dream, Venice",
@@ -440,7 +440,7 @@ export const PAINTINGS = [
 
     },
     {
-
+        id: 32,
         isAvailable: true,
         type: 'seascape',
         title: 'Wild Atlantic Waves',
@@ -454,7 +454,7 @@ export const PAINTINGS = [
 
     },
     {
-    
+        id: 33,
         isAvailable: true,
         type: 'seascape',
         title: 'Ocean Breeze',
@@ -468,7 +468,7 @@ export const PAINTINGS = [
 
     },
     {
-  
+        id: 34,
         isAvailable: true,
         type: 'seascape',
         title: 'Symphony Of Sails',
@@ -482,7 +482,7 @@ export const PAINTINGS = [
 
     },
     {
-
+        id: 35,
         isAvailable: true,
         type: 'seascape',
         title: 'Beach Girl',
@@ -496,7 +496,7 @@ export const PAINTINGS = [
 
     },
     {
-       
+        id: 36,
         isAvailable: true,
         type: 'seascape',
         title: 'Beach Boys',
@@ -510,7 +510,7 @@ export const PAINTINGS = [
 
     },
     {
-    
+        id: 37,
         isAvailable: true,
         type: 'floral',
         title: "Calla Lily Trio",
@@ -524,7 +524,7 @@ export const PAINTINGS = [
 
     },
     {
-
+        id: 38,
         isAvailable: true,
         type: 'floral',
         title: "Picking Flowers",
@@ -538,7 +538,7 @@ export const PAINTINGS = [
 
     },
     {
- 
+        id: 39,
         isAvailable: true,
         type: 'floral',
         title: "Red Geranium",
@@ -552,7 +552,7 @@ export const PAINTINGS = [
 
     },
     {
-   
+        id: 40,
         isAvailable: true,
         type: 'floral',
         title: "Patio Urn",
@@ -566,7 +566,7 @@ export const PAINTINGS = [
 
     },
     {
-
+        id: 41,
         isAvailable: true,
         type: 'floral',
         title: 'Everlasting Rose',
@@ -580,7 +580,7 @@ export const PAINTINGS = [
 
     },
     { 
-
+        id: 42,
         isAvailable: false,
         type: 'floral',
         title: 'Among The Poppies',
@@ -593,7 +593,7 @@ export const PAINTINGS = [
 
     },
     {
-   
+        id: 43,
         isAvailable: false,
         type: 'floral',
         title: 'Magnolia Magic',

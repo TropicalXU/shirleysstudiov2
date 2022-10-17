@@ -1,10 +1,22 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { FadeTransform } from 'react-animation-components';
+import { Button } from 'reactstrap';
 
 const RenderPaintings = ({item}) => {
     return (
-        <>
-            <img src={item.image} className='img-painting' width='100%' height='330px' />
+        <>  
+            <FadeTransform in
+                transformProps={{
+                exitTransform: 'scale(0.3) translateY(-20%)'
+            }}>
+                <Link to={`/gallery/${item.id}`}>
+                    <div className='img-container'>
+                    <img src={item.image} className='img-painting' width='100%' height='330px' />
+                    <Button type='submit' className='btn-light font-two px-4 py-2'>View</Button>
+                    </div>
+                </Link>
+            </FadeTransform>
         </>
     );
 }
@@ -27,18 +39,26 @@ const Floral = (props) => {
     });
     
     return (
-        <div className='container tabs'>
-           <div className='row d-flex justify-content-center py-5'>
-                <div className='col-12 col-md-6 text-center'>
-                    <div className='btn-services-tab'>
-                        <Link to='/gallery/landscape' className='btn btn-services-active font-two active'><span className='fa fa-box mr-2'></span>Landscape <span className='fa fa-chevron-down'></span></Link>
-                        <Link to='/gallery/seascape' className='btn btn-services font-two ml-1'>Seascape <span className='fa fa-chevron-down'></span></Link>
-                        <Link to='/gallery/floral' className='btn btn-services font-two ml-1'>Floral <span className='fa fa-chevron-down'></span></Link>
+        <div className='row-lt-grey pb-5'>
+            <div className='container tabs'>
+                <div className='row d-flex justify-content-center py-5'>
+                    <div className='col-12 text-center'>
+                        <h5 className='font'>Choose from...</h5>
+                    </div>
+                    <div className='col-12 col-md-8 text-center'>
+                        <div className='btn-services-tab'>
+                            <Link to='/gallery/landscape' className='btn btn-services font-two active'>LANDSCAPE</Link>
+                            <span className='btn-services'>|</span>
+                            <Link to='/gallery/seascape' className='btn btn-services font-two ml-1'>SEASCAPE</Link>
+                            <span className='btn-services'>|</span>
+                            <Link to='/gallery/floral' className='btn btn-services-active font-two ml-1'>FLORAL</Link>
+                        </div>
+                        <hr></hr>
                     </div>
                 </div>
-            </div>
-            <div className='row mt-3 mb-5'>
-                {floralPaintings}
+                <div className='row container-avail mt-3 p-5'>
+                    {floralPaintings}
+                </div>
             </div>
         </div>
     );

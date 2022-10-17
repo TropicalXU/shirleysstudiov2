@@ -1,17 +1,111 @@
+a:link {
+  text-decoration: none;
+}
+
+.text-grey {
+  color: #7a7a7a;
+}
+
+.text-black {
+  color: black;
+}
+
+.artist-text {
+  font-size: 18px;
+}
+
+.fa-quote-left {
+  font-size: 30px;
+}
+
+.btn-dark {
+  background-color: black;
+  border-radius: 50px;
+}
+
+.btn-contact {
+  color: white;
+  background-color: #6a12e6;
+  border-radius: 9px;
+  box-shadow: 0 0 10px rgb(190, 190, 190);
+}
+
+.btn-contact:hover {
+  color: white;
+  background-color: #8338ec;
+  opacity: .8;
+}
+
+.studio-bg {
+  background-color: #f5f3f4;
+}
+
+.row-dark {
+  background-color: #d6cfcb;
+}
+
+.row-grey {
+  background-color: #efefef;
+}
+
+.row-lt-grey {
+  background-color: #f6f6f6;
+}
+
 .home-header {
   background-image: url('/public/assets/images/painting.JPG');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
   background-repeat: no-repeat;
-
   height: 600px;
-  /* box-shadow: 0 0 10px rgb(163, 163, 163); */
+  box-shadow: 0 0 10px rgb(163, 163, 163);
 }
+
+.about-header {
+  background-image: url('/public/assets/images/studio-bg.JPG');
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  box-shadow: 0 0 10px rgb(163, 163, 163);
+  position: relative;
+}
+
+.container-avail {
+  background-color: #ffffff;
+  border-radius: 25px;
+}
+
+.navbar {
+  box-shadow: 0 0 10px rgb(215, 215, 215);
+}
+
 
 .navbrand {
   font-family: 'Courgette', cursive;
   font-size: 24px;
+}
+
+.drop-menu {
+  background-color: rgba(255, 255, 255, 0.834);
+  padding: 30px;
+  border-radius: 15px;
+  border: none;
+  box-shadow: 0 0 10px rgba(49, 49, 49, 0.486);
+}
+
+.drop-item a {
+  color: rgb(0, 0, 0);
+}
+
+.drop-item:hover a {
+  color: rgba(57, 57, 57, 0.894);
+}
+
+.drop-item:hover {
+  color: rgb(0, 0, 0);
+  background-color: rgba(255, 255, 255, 0.398);
+  border-radius: 50px;
 }
 
 .featured-img {
@@ -36,6 +130,26 @@
   font-size: 50px;
 }
 
+.btn-services, .btn-services-active {
+  font-size: 35px;
+}
+
+.btn-services {
+  color: #bcb8b1;
+}
+
+.breadcrumb {
+  background-color: black;
+  border-radius: 9px;
+}
+
+.b-link {
+  color: lightgrey;
+}
+
+.b-link:hover {
+  color: white;
+}
 
 .home-title {
   font-size: 90px;
@@ -46,18 +160,89 @@
   text-shadow: 0 0.05rem 0.3rem rgba(0, 0, 0, 0.757);
 }
 
-.home-about {
-  background-color: #2b2d42;
-}
-
 .available-img {
   border-radius: 15px;
 }
 
-.img-painting {
+.img-painting, .img-painting-detail {
+  box-shadow: 0 0 10px rgb(190, 190, 190);
+  position: relative;
+  border-radius: 15px;
+}
+
+.btn-light {
+  display: none;
+  border-radius: 50px;
+}
+
+.img-container:hover .btn-light{
+  display: inline-block;
+  position: absolute;
+  right: 40%;
+  top: 43%;
+}
+
+.img-container:hover .img-painting {
+  opacity: 0.5;
+  transition: 0.3s;
+}
+
+.description-card {
+  border-radius: 15px;
+}
+
+.about-title {
+  font-size: 60px;
+  color: #bcb8b1;
+}
+
+.about-container {
+  background-color: #ffffff;
+  border-radius: 15px;
+}
+
+.about-text {
+  font-size: 18px;
+}
+
+.shirley-img {
+  box-shadow: 0 0 10px rgb(190, 190, 190);
+}
+
+.custom-card {
+  border: none;
+  border-radius: 25px;
   box-shadow: 0 0 10px rgb(190, 190, 190);
 }
 
 .footer {
-  background-color: #edf2f4;
+  background-color: #ffffff;
+}
+
+.footer h5 {
+  color: rgb(106, 106, 106);
+}
+
+.footer .link {
+  color: rgb(165, 165, 165);
+}
+
+.footer li, p {
+  font-size: 14px;
+}
+
+.footer .link:hover {
+  color: black;
+}
+
+.footer, .fa-github, .fa-instagram, .fa-linkedin, .fa-medium {
+  color: rgb(0, 0, 0);
+}
+
+.footer-bottom p {
+  font-weight: 600;
+  font-size: 10px;
+}
+.footer-bottom .link {
+  font-size: 10px;
 }

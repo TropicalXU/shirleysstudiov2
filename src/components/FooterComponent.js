@@ -4,9 +4,9 @@ import { Link } from 'react-router-dom';
 const Footer = () => {
     return (
           //FOOTER COMPONENT--------------//
-            <div className='footer font-two'>
+            <div className='footer font-two pt-4'>
                 <div className='container-fluid mx-4 py-5'>
-                    <div className='row py-5'>
+                    <div className='row py-5 mb-5'>
                         <div className='col-12 col-lg-4 py-5'>
                             <div className='row'>
                                 <img src='/assets/images/logo2.png' alt='Logo' height='60' width='61' />
@@ -24,20 +24,17 @@ const Footer = () => {
                         <div className='col-6 col-lg-2 pt-5'>
                             <h5 className='font-two'>Gallery</h5>
                             <ul className='list-unstyled'>
-                                <li><Link className='link' to='/services'>Services</Link></li>
-                                <li><Link className='link' to='/discover'>Discover</Link></li>
-                                <li><Link className='link' to='/services/custom-package'>Custom Package</Link></li>
-                                <li><Link className='link' to='/services/custom-plus-package'>Custom + Package</Link></li>
-                                <li><Link className='link' to='/services/business-plus-package'>Busines + Package</Link></li>
+                                <li><Link className='link' to='/gallery'>All</Link></li>
+                                <li><Link className='link' to='/gallery/landscape'>Landscape</Link></li>
+                                <li><Link className='link' to='/gallery/seascape'>Seascape</Link></li>
+                                <li><Link className='link' to='/gallery/floral'>Floral</Link></li>
                             </ul>
                         </div>
                         <div className='col-6 col-lg-2 pt-5'>
-                            <h5 className='font-two'>Work</h5>
+                            <h5 className='font-two'>Paintings</h5>
                             <ul className='list-unstyled'>
-                                <li><Link className='link' to='/about'>Projects</Link></li>
-                                <li><Link className='link' to='/projects/0'>Shirleys Studio</Link></li>
-                                <li><Link className='link' to='/projects/1'>Vacay</Link></li>
-                                <li><Link className='link' to='/projects/2'>Viewpoint Ireland</Link></li>
+                                <li><Link className='link' to='/gallery/available'>Available Works</Link></li>
+                                <li><Link className='link' to='/gallery/sold'>Sold Works</Link></li>
                             </ul>
                         </div>
                         <div className='col-6 col-lg-2 align-items-center pt-5'>

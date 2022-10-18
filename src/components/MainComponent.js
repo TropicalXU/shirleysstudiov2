@@ -12,6 +12,9 @@ import Floral from './FloralComponent';
 import PaintingDetail from './PaintingDetailComponent';
 import About from './AboutComponent';
 import Contact from './ContactComponent';
+import TermsAndConditions from './TermsAndConditionsComponent';
+import PrivacyPolicy from './PrivacyPolicyComponent';
+import SalesAndRefunds from './SalesAndRefundsComponent';
 import { PAINTINGS } from '../shared/paintings';
 import { Switch, Route, Redirect, Link } from 'react-router-dom'
 
@@ -68,6 +71,9 @@ class Main extends Component {
                                         available3={this.state.paintings.filter((painting) => painting.isAvailable)[5]} 
                     />} />
                     <Route exact path='/contact' component={ () => <Contact />} />
+                    <Route exact path='/terms-and-conditions' component={ () => <TermsAndConditions /> } />
+                    <Route exact path='/privacy-policy' component={ () => <PrivacyPolicy /> } />
+                    <Route exact path='/sales-and-refunds' component={ () => <SalesAndRefunds /> } />
                 </Switch>
                 <Footer />
             </div>

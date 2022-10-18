@@ -47,14 +47,17 @@ const Footer = () => {
                     </div>
                     <hr></hr>
                     <div className='row py-4  footer-bottom'>
-                        <div className='col-12 col-lg-8'>
+                        <div className='col-12 col-lg-6'>
                             <p>© 2022 Shirleys Art Studio. All rights reserved.</p>
                         </div>
-                        <div className='col-6 col-md-2 col-lg-2'>
-                            <Link className='link' to='/termsAndConditions'>Terms & Conditions</Link>
+                        <div className='col-4 col-md-2 col-lg-2'>
+                            <Link className='link' to='/terms-and-conditions'>Terms & Conditions</Link>
                         </div>
-                        <div className='col-6 col-md-2 col-lg-2'>
-                            <Link className='link' to='/privacyPolicy'>Privacy Policy</Link>
+                        <div className='col-4 col-md-2 col-lg-2'>
+                            <Link className='link' to='/privacy-policy'>Privacy Policy</Link>
+                        </div>
+                        <div className='col-4 col-md-2 col-lg-2'>
+                            <Link className='link' to='/sales-and-refunds'>Sales & Refunds</Link>
                         </div>
                     </div>
                 </div>
